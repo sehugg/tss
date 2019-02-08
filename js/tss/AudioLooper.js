@@ -213,7 +213,7 @@ AudioLooper.prototype.isActive = function () {
 AudioLooper.prototype.activate = function () {
     if (this.isActive())
         return;
-    if (this.bufferSource('noteOn'))
+    if (this.bufferSource['noteOn'])
         this.bufferSource['noteOn'](0);
 };
 
